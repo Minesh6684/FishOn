@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/61201149d8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/final_project.css">
+    <link rel="stylesheet" href="styles/form_style.css">
+    <title>FishOn</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo_name">
+            <a href="#nav2">
+                <i class="fa-solid fa-otter"></i> <!-- Organization Logo -->
+                <span class="company_name">FishOn</span> <!-- Organization Name -->
+            </a>
+        </div>
+
+        <!-- Hamburger Button -->
+        <input type="checkbox" id="menu_checkbox"> <!-- Checkbox for Hambuger button -->
+        <label for="menu_checkbox"><i class="fa-solid fa-bars"></i></label> <!-- Hamburger button icon -->
+        <div class="nav_links">
+            <span class="home navigator"><a href="#">home</a></span> <!-- onclick element redirection to href ids -->
+            <span class="about navigator"><a href="#nav2">about</a></span> 
+            <span class="services navigator"><a href="#nav3">services</a></span>
+            <span class="contact navigator"> <a href="#nav4">contact</a></span>
+        </div>
+    </nav>
+
+    <!-- Main section, containing background image and motto on it -->
+    <main>
+        <h2>FishOn</h2>
+        <p class="motto" id="nav2">We Deliver the best of the food,
+            From Ocean
+        </p>
+    </main>
+
+    <!-- About Us Section -->
+    <section class="about_us">
+        <h3>about us</h3>
+        <div class="mvv" id="nav3">
+            <!-- 'onclick' Event addition to the buttons of about section,
+                  onclick these elements 'displayTabContent' function will be triggered
+                  with perticular argument as 'mission', 'vision', 'value'  -->
+            <button class="about_us_tab mission" id="defaultopen">mission</button>
+            <button class="about_us_tab vision">vision</button>    
+            <button class="about_us_tab value">value</button>
+        </div>  
+        <!-- onclick="displayTabContent('mission')" -->
+        <!-- section to display content of choosen tab -->
+        <p class="about_text"></p>
+    </section>
+
+    <!--  Services Section -->
+    <section class="services_section">
+        <h3>services</h3>
+        <div class="carousel" data-carousel>
+
+            <div class="prev carousel-button" data-carousel-button="prev"><</div> <!-- button to get previous service content -->
+            <!-- Service contents -->
+            <!-- id to all span are given to convert it into integer and use it as an index of respective span to display them again throung converting it to id -->
+            <div class="slide active" id="1">Meals curation by an in-house chef, using only the freshest ingredients sourced from local suppliers in a zero-waste facility.</div>
+            <div class="slide" id="2">FishOn takes pride in delivering the highest quality, perfectly portioned ready-to-eat meals right to your door!</div>
+            <div class="slide" id="3">We are always spearheading community initiatives like shoreline cleanups, donations, and scholarship opportunities.</div>
+            <div class="next carousel-button" data-carousel-button="next">></div> <!-- button to get next service content -->
+       
+        </div>
+    </section>  
+
+    <!-- Section for Products, Contact Form, Footer -->
+    <div class="pro_con_foot">
+
+        <!-- Section for Product -->
+        <section class="products">
+            <h3 class="product_heading">products</h3>
+            <div class="products_images">
+                <!-- Product images -->
+                <a class="tuna_" href="#"><img  class="salmon_image" src="images/products/salmon.jpg" alt=""><div class="tuna_text">Salmon</div></a>
+                <a class="prawns_" href="#"><img class="prawns_image" src="images/products/prawn.jpg" alt=""><div class="prawns_text">Prawns</div></a>
+                <a class="crab_" href="#"><img   class="crab_image" src="images/products/crab.jpg" alt=""><div class="crab_text">Crab</div></a>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <div class="contact_us" id="nav4">
+
+            <h3>contact us</h3>
+            <!-- forms with fields to get user information -->
+            <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+
+                <input type="text" name="subject" placeholder="Subject" required/>
+                <input type="text" name='full_name' placeholder="Full Name" required>
+                <input type="email" name="extra_email_address" placeholder="E-mail Address" required />
+                <textarea name="text" id="message" placeholder="Message" required></textarea>
+                <input type="hidden" name="access_token" value="ch6t2aib2a4gztfh9phutxmg" />
+                <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+
+                <input type="hidden" name="sms_format" value="true" />
+                <input id="submit_form" type="submit" value="Send" />
+
+            </form>
+        
+        </div>
+
+
+        <!-- Footer Section -->
+        <footer class="footer_">
+
+            <!-- logo and name in footer -->
+            <div class="name">
+                <a href="#">
+                    <i class="fa-solid fa-otter"></i>
+                    <span class="company_name">FishOn</span>
+                </a>
+            </div>
+
+            <!-- Second row of footer containing Operational-Time, Social-Media Links and Address -->
+            <div class="second_row_footer">
+                <!-- Operational Hours -->
+                <div class="operation_time">
+                    <h4>operational time</h4>
+                    <p>monday - tuesday: 09:00 - 17:00</p>
+                    <p>friday - sunday: 09:00 - 13:00</p>
+                </div>
+                <!-- Social-Media Links -->
+                <div class="follow_us">
+                    <h4>follow us</h4>
+                    <a href="https://www.instagram.com/minesh_6684/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100071707069283&sk" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/minesh_6684" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                </div>
+                <!-- Address section -->
+                <div class="address_footer">
+                    <h4>location</h4>
+                    <p class="address">6333, decarie boulevard, 
+                        montreal, QC canada H3W 3E1
+                    </p>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="rights_reserved">
+                <hr/>
+                <span>2019-2022</span>
+                &copy;
+                <span>all rights reserved</span>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="scripts/final_project.js"></script>
+</body>
+</html>
