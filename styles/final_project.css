@@ -476,19 +476,13 @@ hr {
     }
 
     main {
-        background-image: url(../images/main/responsive_main_background.jpg);
-        background-position: top left; /*Sets the initial position of the background image. */
-        background-size: cover; /* Scales the image to its smallest possible size to fill the container */
-        background-repeat: no-repeat; /* Prevents to repeat the background image on the viewport. */
-        background-attachment: fixed; /*Fixes the background image position within the viewport. */
-        height: 90vh; /*Gives the height to the background image. */
+        height: 100vh; /*Gives the height to the background image. */
         color: white;
         font-family: courier, sans-serif;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
         padding: 10px;
+        background-size:cover;
+        background-image: url(../images/main/responsive_main_background.jpg);
     }
     
     main h2 {

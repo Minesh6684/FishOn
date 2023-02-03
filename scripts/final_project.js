@@ -33,7 +33,7 @@ const aboutUsTab = document.querySelectorAll('.about_us_tab') // get all the but
     
     /* Iteration over each TAB 
        and adding event to them, upon click on the TAB the arrow function 
-       will execute the instruction inside it.*/
+       will execute the instructions inside it.*/
 aboutUsTab.forEach(element => {
     element.addEventListener('click', () => {
         //Gets all the contents of TABS
